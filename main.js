@@ -70,8 +70,9 @@ var joust = {
       })
   },
   trashTalk: function(){
+    var trashStr = prompt("time to trash talk!")
+    myChar.trashBoating(trashStr);
     $('.trashTalk').fadeIn();
-
   },
   showBoating: function(){
     var showBoatStr = prompt("time to Showboat!")
