@@ -3,6 +3,9 @@
 //define attr & protypes
 
 var horseObject = {
+  penelope: {},
+  mrEd: {},
+  hector: {},
   init: function() {
 
     class Horse {
@@ -23,11 +26,9 @@ var horseObject = {
       }
     }
 
-    function createHorse(props) {
-      return new Horse(props);
-    }
+    horseObject.penelope = new Horse({speed:100, name: "Penelope", healthWeapon: "Laser Eyes", balanceWeapon: "Thunder Wings"});
+    horseObject.mrEd = new Horse({speed: 100, name: "Mr. Ed", healthWeapon: "Super-sonic", balanceWeapon: "Rainbow Fart"});
+    horseObject.hector = new Horse({speed:100, name: "Hector", healthWeapon: "Fire Breath", balanceWeapon: "Stank Eye"});
 
-
-    return createHorse;
   }
 }

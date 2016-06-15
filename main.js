@@ -12,6 +12,7 @@ var joust = {
   init: function() {
     joust.styling();
     joust.events();
+    horseObject.init();
   },
 
   styling: function() {
@@ -57,9 +58,21 @@ var joust = {
           });
     // selects horse
       $('.horse-img').on('click', function(){
+        $('.charPage .horse-img').siblings().removeClass('selected');
         event.preventDefault();
-        var createHorse = horseObject.init();
-        myHorse = createHorse();
+        var horse = this.classList[0];
+        console.log(this.classList[0]);
+        this.classList.add('selected');
+        console.log(this);
+
+        if(horse === 'penelope') {
+          myHorse = horseObject.penelope;
+        } else if (horse === 'hector') {
+          myHorse = horseObject.hector;
+        } else {
+          myHorse = horseObject.mrEd;
+        };
+        console.log("this is my horse: ", myHorse)
       });
 
       // fades out char page and sends to lance page
