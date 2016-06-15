@@ -39,3 +39,26 @@
     cursor: pointer; }
     .titleInWindow h5:hover {
       font-size: 1.2em; }
+
+.charPage {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center; }
+
+.mrEd {
+  background-image: url(assets/MrEd.png);
+  background-size: 200px 200px;
+  width: 200px;
+  height: 200px; }
+
+.penelope {
+  background-image: url(assets/Hector.png);
+  background-size: 200px 200px;
+  width: 200px;
+  height: 200px; }
+
+.hector {
+  background-image: url(assets/thunder-pegasus.png);
+  background-size: 200px 200px;
+  width: 200px;
+  height: 200px; }
