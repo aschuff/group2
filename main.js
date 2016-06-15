@@ -50,9 +50,10 @@ var joust = {
             $(".username").fadeOut();
           });
 
-    $('.lance-img').on('click', function(){
+    $('.lancename').on('click', function(){
       event.preventDefault();
-      var chosenLance = $(this)
+      $('.charPage').fadeOut();
+      joust.trashTalk();
     });
 
     $('.horse-img').on('click', function(){
@@ -62,8 +63,7 @@ var joust = {
     });
   },
   trashTalk: function(){
-    var trashStr = prompt("time to trash talk!")
-    myChar.trashBoating(trashStr);
+    $('.trashTalk').fadeIn();
 
   },
   showBoating: function(){
