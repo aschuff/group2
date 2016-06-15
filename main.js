@@ -26,6 +26,7 @@ var joust = {
     joust.trashTalk();
     joust.fight();
     joust.gameOver();
+    joust.chooseHorse();
   },
 
   title: function() {
