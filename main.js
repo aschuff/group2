@@ -50,11 +50,16 @@ var joust = {
             myChar = createChar($username);
             $(".username").fadeOut();
           });
+      $('.lancename').on('click', function(event){
+            event.preventDefault();
+            console.log($lancename);
+            $(".charPage").fadeOut();
+          });
 
-    $('.lance-img').on('click', function(){
-      event.preventDefault();
-      var chosenLance = $(this)
-    });
+    // $('.lance-img').on('click', function(){
+    //   event.preventDefault();
+    //   var chosenLance = $(this)
+    // });
 
     $('.horse-img').on('click', function(){
       event.preventDefault();
@@ -106,11 +111,3 @@ var joust = {
     return horse;
   }
 }
-
-
-
-$('.lancename').on('click', function(event){
-      event.preventDefault();
-      var $lancename = $('input[name="lance"]').val()
-      console.log($lancename);
-    });
