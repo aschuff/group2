@@ -37,5 +37,5 @@ var horseObject = {
     // Horse.prototype.affectHealth = function(char) {
     //   char.health = char.health - this.healthWeaponAffect;
     // }
-//   }
-// }
+  }
+}
