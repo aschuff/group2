@@ -50,7 +50,7 @@
   background-size: 200px 200px;
   width: 200px;
   height: 200px;
-  margin-left: -6em; }
+  margin-left: -10%; }
 
 div.mrEd:hover {
   transform: translateX(50%); }
@@ -60,7 +60,7 @@ div.mrEd:hover {
   background-size: 200px 200px;
   width: 200px;
   height: 200px;
-  margin: -10em 0px -1em 58em; }
+  margin: -15% 0% -7% 93%; }
 
 div.penelope:hover {
   transform: translateX(-67%); }
@@ -70,17 +70,16 @@ div.penelope:hover {
   background-size: 200px 200px;
   width: 200px;
   height: 200px;
-  margin-left: 24em;
-  margin-top: 3em; }
+  margin-left: 38%;
+  margin-top: 11%; }
 
 div.hector:hover {
   transform: translateY(-65%); }
 
 input {
-  margin-left: 21em;
-  margin-bottom: 1em;
-  margin-top: 1em;
-  border: 4px solid black; }
+  margin-left: 33%;
+  margin-top: 2%;
+  border: 3px solid black; }
 
 button {
-  border: 4px solid black; }
+  border: 3px solid black; }

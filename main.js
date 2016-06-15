@@ -53,7 +53,7 @@ var joust = {
     $('.horse-img').on('click', function(){
       event.preventDefault();
       var chosenHorse = this.chooseHorse($(this).data("horseName"));
-      //uhhh... ?
+      console.log("this is your horse");
     });
   },
   trashTalk: function(){
