@@ -1,12 +1,7 @@
-.game-window {
-  width: 70%;
-  margin: 20px auto;
-  height: 500px;
-  background: lightslategray;
-  border: 10px solid black;
-  box-shadow: 0 5px 5px 1px rgba(0,0,0,0.2);
+//IMPORT STYLING
+* {
+  font-family: 'Rock Salt', cursive;
 }
-
 
 @import "title";
 @import "chooseChar";

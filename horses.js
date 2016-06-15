@@ -10,8 +10,8 @@ var horseObject = {
       this.speed = opts.speed;
       this.healthWeapon = opts.healthWeapon;
       this.balanceWeapon = opts.balanceWeapon;
-      this.healthWeaponAffect = Math.floor(Math.random() * (14) + 20;
-      this.balanceWeaponAffect = Math.floor(Math.random() * (14) + 20;
+      this.healthWeaponAffect = Math.floor(Math.random() * (14) + 20);
+      this.balanceWeaponAffect = Math.floor(Math.random() * (14) + 20);
     }
     Horse.prototype.affectBalance = function(char) {
       char.balance = char.balance - this.balanceWeaponAffect;
@@ -21,5 +21,5 @@ var horseObject = {
     }
 
   }
-  
+
 }
