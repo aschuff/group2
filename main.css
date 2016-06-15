@@ -63,6 +63,10 @@ div.mrEd:hover {
   transform: translateX(50%);
   cursor: pointer; }
 
+p.horseMrEd {
+  margin-left: 48%;
+  color: #FFF; }
+
 .penelope {
   background-image: url(assets/Hector.png);
   background-size: 200px 200px;
@@ -73,6 +77,11 @@ div.mrEd:hover {
 div.penelope:hover {
   transform: translateX(-67%);
   cursor: pointer; }
+
+p.horsePenelope {
+  margin-left: 48%;
+  margin-left: -68%;
+  color: #FFF; }
 
 .hector {
   background-image: url(assets/thunder-pegasus.png);
@@ -86,13 +95,30 @@ div.hector:hover {
   transform: translateY(-65%);
   cursor: pointer; }
 
+p.horseHector {
+  margin-left: -74%;
+  margin-bottom: 0%;
+  margin-top: 0%;
+  color: #FFF; }
+
 input {
   margin-left: 4%;
   margin-top: 5%;
   border: 3px solid black; }
+
 button {
   border: 3px solid black;
   cursor: pointer; }
+
+.selected.mrEd {
+  transform: translateX(50%); }
+
+.selected.hector {
+  transform: translateY(-65%); }
+
+.selected.penelope {
+  transform: translateX(-67%); }
+
 .trashTalk {
   width: 90%;
   margin: 0 auto; }

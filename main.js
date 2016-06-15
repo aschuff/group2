@@ -56,13 +56,7 @@ var joust = {
             $(".lancename").fadeOut();
             $(".toLancePage").fadeIn();
           });
-
-    $('.horse-img').on('click', function(){
-      event.preventDefault();
-      var chosenHorse = this.chooseHorse($(this).data("horseName"));
-      console.log("this is your horse");
-      $('.trashTalk').show()
-    });
+          
   },
   trashTalk: function(){
     var trashStr = prompt("time to trash talk!")
