@@ -58,12 +58,12 @@ var joust = {
   },
   trashTalk: function(){
     var trashStr = prompt("time to trash talk!")
-    myChar.trashBoat(trashStr);
+    myChar.trashBoating(trashStr);
 
   },
   showBoating: function(){
     var showBoatStr = prompt("time to Showboat!")
-    myChar.trashBoat(showBoatStr);
+    myChar.trashBoating(showBoatStr);
   },
   fight: function(){
     // choose attack
