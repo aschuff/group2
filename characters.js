@@ -3,7 +3,7 @@
 //define attr & protypes
 
 var charObject = {
-  
+
   init: function() {
 
     class Character {
@@ -15,12 +15,19 @@ var charObject = {
       }
       trashBoating(str) {
         console.log(`${this.name}: ${str}`);
+      }
     }
 
+
+
+    function createCharacter(props) {
+      return new Character(props);
     }
 
 
-
+    return createCharacter;
 
   }
+
+
 }
