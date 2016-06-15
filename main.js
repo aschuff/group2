@@ -5,7 +5,10 @@ $(document).ready(function(){
 
 var joust = {
   myChar: {},
+  myHorse; {},
   enemy: {},
+  enemyHorse: {},
+
   init: function() {
     joust.styling();
     joust.events();
@@ -46,13 +49,19 @@ var joust = {
     }
   },
   trashTalk: function(){
-    prompt...
+    var trashStr = prompt("time to trash talk!")
+    myChar.trashBoat(trashStr);
+
   },
+  showBoating: function(){
+    var showBoatStr = prompt("time to Showboat!")
+    myChar.trashBoat(showBoatStr);
+  }
   fight: function(){
     choose attack
     calculate health
     check for death
-    showboat
+    showboating
   },
   gameOver: function(){
     // check score(health)
@@ -66,6 +75,7 @@ var joust = {
     declare winner
     ((go to next enemy?))
     // play again if lose or win???
+
     prompt('Would you like to play again?')
   }
   chooseHorse: function(whichHorse){
