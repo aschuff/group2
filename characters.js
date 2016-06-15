@@ -5,14 +5,17 @@
 var charObject = {
   init: function() {
 
-    function Character(opts) {
-      this.name = opts && opts.name ? opts.name : "Thor";
-      this.health = 100;
-      this.balance = 100;
-      this.lance = opts && opts.name ? opts.lance : "Rusty Lance";
+    class Character {
+      constructor(props) {
+        this.name = props && props.name ? props.name : "DMX";
+        this.health = 100;
+        this.balance = 100;
+        this.lance = props && props.name ? props.lance : "Rusty Lance";
+      }
+      trashBoating(str) {
+        console.log(`${this.name}: ${str}`);
     }
-    Character.prototype.trashBoating = function(str) {
-      console.log(`${this.name}: ${str}`);
+
     }
 
   }

@@ -43,7 +43,7 @@ var joust = {
     // $('.character-screen').show();
       var charName = prompt("Choose your character's name");
       console.log(charName);
-      
+
 
     $('.lance-img').on('click', function(){
       event.preventDefault();
@@ -74,11 +74,11 @@ var joust = {
   gameOver: function(){
     // check score(health)
     if (myChar > enemy) {
-      alert('You Won!')
+      alert('You Won! Play again?')
     }else if (myChar < enemy) {
-      alert('You have been defeated.')
+      alert('You have been defeated. Play again?')
     }else {
-      alert('Looks like a tie!')
+      alert('Looks like a tie! Play again?')
     }
     // declare winner
     // ((go to next enemy?))
