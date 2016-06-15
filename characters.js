@@ -3,6 +3,7 @@
 //define attr & protypes
 
 var charObject = {
+  
   init: function() {
 
     class Character {
@@ -17,6 +18,9 @@ var charObject = {
     }
 
     }
+
+
+
 
   }
 }
