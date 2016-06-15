@@ -1,6 +1,7 @@
 // david test
 $(document).ready(function(){
   joust.init();
+  horseObject.init();
 })
 
 var joust = {
@@ -12,8 +13,6 @@ var joust = {
   init: function() {
     joust.styling();
     joust.events();
-    charObject.init();
-    horseObject.init();
   },
 
   styling: function() {
@@ -42,8 +41,15 @@ var joust = {
   chooseChar: function() {
     // show inputs for name and lance, and horses
     // var charName = prompt("Choose your character's name");
-      console.log(charName);
-
+      //console.log(charName);
+      $('.username').on('click', function(event){
+            event.preventDefault();
+            var $username = $('input[name="name"]').val()
+            console.log($username);
+            var createChar = charObject.init();
+            myChar = createChar($username);
+            $(".username").fadeOut();
+          });
 
     $('.lance-img').on('click', function(){
       event.preventDefault();
@@ -100,3 +106,11 @@ var joust = {
     return horse;
   }
 }
+
+
+
+$('.lancename').on('click', function(event){
+      event.preventDefault();
+      var $lancename = $('input[name="lance"]').val()
+      console.log($lancename);
+    });
