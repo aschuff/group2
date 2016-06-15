@@ -66,14 +66,14 @@ var joust = {
   gameOver: function(){
     // check score(health)
     if (myChar > enemy) {
-      alert('You Won!')
+      alert('You Won! Play again?')
     }else if (myChar < enemy) {
-      alert('You have been defeated.')
+      alert('You have been defeated. Play again?')
     }else {
-      alert('Looks like a tie!')
+      alert('Looks like a tie! Play again?')
     }
-    declare winner
-    ((go to next enemy?))
+    // declare winner
+    // ((go to next enemy?))
     // play again if lose or win???
 
     prompt('Would you like to play again?')
