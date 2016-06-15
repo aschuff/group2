@@ -41,7 +41,8 @@ var joust = {
 
     $('.horse-img').on('click', function(){
       event.preventDefault();
-      var chosenHorse = $(this)
+      var chosenHorse = this.chooseHorse($(this).data("horseName"));
+      //uhhh... ?
     }
   },
   trashTalk: function(){
@@ -67,5 +68,17 @@ var joust = {
     // play again if lose or win???
     prompt('Would you like to play again?')
   }
-
+  chooseHorse: function(whichHorse){
+    var horse = horseObject;
+    if (whichHorse === "Mr. Ed"){
+        horse = new Horse({speed: 100, name: "Mr. Ed", healthWeapon: "Super-sonic", balanceWeapon: "Rainbow Fart"});
+      }
+    else if (whichHorse === "Penelope"){
+      horse = new Horse({speed:100, name: "Penelope", healthWeapon: "Laser Eyes", balanceWeapon: "Thunder Wings"});
+    }
+    else if (whichHorse === "Hector"){
+      horse = new Horse({speed:100, name: "Hector", healthWeapon: "Fire Breath", balanceWeapon: "Stank Eye"})
+    }
+    return horse;
+  }
 }
