@@ -43,7 +43,7 @@ var joust = {
       //console.log(charName);
       $('.username').on('click', function(event){
             event.preventDefault();
-            var $username = $('input[name="name"]').val()
+            var $username = $('input[name="name"]').val();
             console.log($username);
             var createChar = charObject.init();
             myChar = createChar($username);
@@ -51,8 +51,10 @@ var joust = {
           });
       $('.lancename').on('click', function(event){
             event.preventDefault();
+            var $lancename = $('input[name="lance"]').val();
             console.log($lancename);
-            $(".charPage").fadeOut();
+            $(".lancename").fadeOut();
+            $(".toLancePage").fadeIn();
           });
 
     // $('.lance-img').on('click', function(){
