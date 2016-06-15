@@ -39,8 +39,6 @@ var joust = {
 
   chooseChar: function() {
     // show inputs for name and lance, and horses
-    // var charName = prompt("Choose your character's name");
-      //console.log(charName);
       $('.username').on('click', function(event){
             event.preventDefault();
             var $username = $('input[name="name"]').val();
@@ -49,6 +47,7 @@ var joust = {
             myChar = createChar($username);
             $(".username").fadeOut();
           });
+    // logs lance, fades lance button, fades in continue button
       $('.lancename').on('click', function(event){
             event.preventDefault();
             var $lancename = $('input[name="lance"]').val();
@@ -56,12 +55,19 @@ var joust = {
             $(".lancename").fadeOut();
             $(".toLancePage").fadeIn();
           });
+    // selects horse
+      $('.horse-img').on('click', function(){
+        event.preventDefault();
+        var createHorse = horseObject.init();
+        myHorse = createHorse();
+      });
 
-    $('.horse-img').on('click', function(){
-      event.preventDefault();
-      var chosenHorse = this.chooseHorse($(this).data("horseName"));
-      //uhhh... ?
-    });
+      // fades out char page and sends to lance page
+      $('.toLancePage').on('click', function(){
+        event.preventDefault();
+        $('.charPage').fadeOut();
+        joust.lancePage();
+      })
   },
   trashTalk: function(){
     $('.trashTalk').fadeIn();
