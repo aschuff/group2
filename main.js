@@ -40,8 +40,8 @@ var joust = {
   },
 
   chooseChar: function() {
-    // $('.character-screen').show();
-      var charName = prompt("Choose your character's name");
+    // show inputs for name and lance, and horses
+    // var charName = prompt("Choose your character's name");
       console.log(charName);
 
 
