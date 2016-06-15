@@ -25,17 +25,22 @@ var joust = {
   },
 
   title: function() {
-    $('.title-screen').show
+    $('.title-screen').show();
   },
 
   chooseChar: function() {
-    $('.character-screen').show
-    prompt..... for name
+    $('.character-screen').show();
+      var charName = prompt("Choose your character's name");
+      console.log(charName);
+
     $('.lance-img').on('click', function(){
-      choose lance (from pictures)
+      event.preventDefault();
+      var chosenLance = $(this)
     }
+
     $('.horse-img').on('click', function(){
-      choose horse (from pictures)
+      event.preventDefault();
+      var chosenHorse = $(this)
     }
   },
   trashTalk: function(){
@@ -48,10 +53,18 @@ var joust = {
     showboat
   },
   gameOver: function(){
-    check score(health)
+    // check score(health)
+    if (myChar > enemy) {
+      alert('You Won!')
+    }else if (myChar < enemy) {
+      alert('You have been defeated.')
+    }else {
+      alert('Looks like a tie!')
+    }
     declare winner
     ((go to next enemy?))
-    play again if lose or win???
+    // play again if lose or win???
+    prompt('Would you like to play again?')
   }
 
 }
