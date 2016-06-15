@@ -57,20 +57,22 @@
   background-size: 200px 200px;
   width: 200px;
   height: 200px;
-  margin-left: -10%; }
+  margin-left: -23%; }
 
 div.mrEd:hover {
-  transform: translateX(50%); }
+  transform: translateX(50%);
+  cursor: pointer; }
 
 .penelope {
   background-image: url(assets/Hector.png);
   background-size: 200px 200px;
   width: 200px;
   height: 200px;
-  margin: -15% 0% -7% 93%; }
+  margin: -15% 0% -7% 103%; }
 
 div.penelope:hover {
-  transform: translateX(-67%); }
+  transform: translateX(-67%);
+  cursor: pointer; }
 
 .hector {
   background-image: url(assets/thunder-pegasus.png);
@@ -78,15 +80,17 @@ div.penelope:hover {
   width: 200px;
   height: 200px;
   margin-left: 38%;
-  margin-top: 11%; }
+  margin-top: 14%; }
 
 div.hector:hover {
-  transform: translateY(-65%); }
+  transform: translateY(-65%);
+  cursor: pointer; }
 
 input {
-  margin-left: 33%;
-  margin-top: 2%;
+  margin-left: 4%;
+  margin-top: 5%;
   border: 3px solid black; }
 
 button {
-  border: 3px solid black; }
+  border: 3px solid black;
+  cursor: pointer; }
