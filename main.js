@@ -1,7 +1,6 @@
 // david test
 $(document).ready(function(){
   joust.init();
-  horseObject.init();
 })
 
 var joust = {
