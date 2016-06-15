@@ -39,19 +39,26 @@ var joust = {
     }
   },
   trashTalk: function(){
-    prompt...
+    var trashStr = prompt("time to trash talk!")
+    myChar.trashBoat(trashStr);
+
   },
+  showBoating: function(){
+    var showBoatStr = prompt("time to Showboat!")
+    myChar.trashBoat(showBoatStr);
+  }
   fight: function(){
     choose attack
     calculate health
     check for death
-    showboat
+    showboating
   },
   gameOver: function(){
     check score(health)
     declare winner
     ((go to next enemy?))
-    play again if lose or win???
+    // play again if lose or win???
+
   }
 
 }
