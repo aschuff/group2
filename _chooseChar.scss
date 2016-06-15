@@ -9,16 +9,39 @@
   background-size: 200px 200px;
   width: 200px;
   height: 200px;
+  margin-left: -6em;
+}
+div.mrEd:hover {
+  transform: translateX(50%);
 }
 .penelope {
   background-image: url(assets/Hector.png);
   background-size: 200px 200px;
   width: 200px;
   height: 200px;
+  margin: -10em 0px -1em 58em;
+}
+div.penelope:hover {
+  transform: translateX(-67%);
+
 }
 .hector {
   background-image: url(assets/thunder-pegasus.png);
   background-size: 200px 200px;
   width: 200px;
   height: 200px;
+  margin-left: 24em;
+  margin-top: 3em;
+}
+div.hector:hover {
+  transform: translateY(-65%);
+}
+input {
+  margin-left: 21em;
+  margin-bottom: 1em;
+  margin-top: 1em;
+  border: 4px solid black;
+}
+button {
+  border: 4px solid black;
 }
