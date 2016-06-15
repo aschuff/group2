@@ -57,11 +57,6 @@ var joust = {
             $(".toLancePage").fadeIn();
           });
 
-    // $('.lance-img').on('click', function(){
-    //   event.preventDefault();
-    //   var chosenLance = $(this)
-    // });
-
     $('.horse-img').on('click', function(){
       event.preventDefault();
       var chosenHorse = this.chooseHorse($(this).data("horseName"));
@@ -72,8 +67,7 @@ var joust = {
   trashTalk: function(){
     var trashStr = prompt("time to trash talk!")
     myChar.trashBoating(trashStr);
-    
-
+    $('.trashTalk').fadeIn();
   },
   showBoating: function(){
     var showBoatStr = prompt("time to Showboat!")

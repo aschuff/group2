@@ -90,7 +90,21 @@ input {
   margin-left: 4%;
   margin-top: 5%;
   border: 3px solid black; }
-
 button {
   border: 3px solid black;
   cursor: pointer; }
+.trashTalk {
+  width: 90%;
+  margin: 0 auto; }
+  .trashTalk h3 {
+    font-size: 2em;
+    text-align: center; }
+  .trashTalk input {
+    display: block;
+    margin: 0 auto;
+    width: 90%; }
+  .trashTalk button {
+    display: block;
+    margin: 5px auto;
+    width: 200px;
+    text-align: center; }
