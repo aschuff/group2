@@ -43,17 +43,24 @@ var joust = {
       //console.log(charName);
       $('.username').on('click', function(event){
             event.preventDefault();
-            var $username = $('input[name="name"]').val()
+            var $username = $('input[name="name"]').val();
             console.log($username);
             var createChar = charObject.init();
             myChar = createChar($username);
             $(".username").fadeOut();
           });
+      $('.lancename').on('click', function(event){
+            event.preventDefault();
+            var $lancename = $('input[name="lance"]').val();
+            console.log($lancename);
+            $(".lancename").fadeOut();
+            $(".toLancePage").fadeIn();
+          });
 
-    $('.lance-img').on('click', function(){
-      event.preventDefault();
-      var chosenLance = $(this)
-    });
+    // $('.lance-img').on('click', function(){
+    //   event.preventDefault();
+    //   var chosenLance = $(this)
+    // });
 
     $('.horse-img').on('click', function(){
       event.preventDefault();
@@ -107,11 +114,3 @@ var joust = {
     return horse;
   }
 }
-
-
-
-$('.lancename').on('click', function(event){
-      event.preventDefault();
-      var $lancename = $('input[name="lance"]').val()
-      console.log($lancename);
-    });

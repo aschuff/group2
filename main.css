@@ -45,6 +45,13 @@
   margin: 0 auto;
   text-align: center; }
 
+.toLancePage {
+  display: inline-block;
+  display: none;
+  width: 100px;
+  margin: 0 auto;
+  color: blue; }
+
 .mrEd {
   background-image: url(assets/MrEd.png);
   background-size: 200px 200px;
