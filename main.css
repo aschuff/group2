@@ -157,24 +157,55 @@ button {
     height: 100px;
     position: relative; }
   .trashTalk .heath {
-    top: 23px;
+    top: 89px;
     transform: scaleX(-1); }
   .trashTalk .zombie {
-    left: -90px;
-    top: 9px;
+    left: -204px;
+    top: 26px;
     transform: scaleX(-1); }
   .trashTalk .dmx {
-    left: 618px;
-    bottom: 79px; }
+    left: 498px;
+    bottom: 40px; }
   .trashTalk .ed {
-    bottom: 118px;
-    left: 500px;
+    bottom: 81px;
+    left: 261px;
     transform: scaleX(-1); }
 
 .fightPage .fence {
   width: 100%;
   height: 50px;
-  margin-top: 25%; }
+  margin-left: 0; }
+
+.fightPage .myFighter {
+  margin-top: 8%; }
+
+.fightPage img {
+  width: 100px;
+  height: 100px;
+  position: relative; }
+
+.heath {
+  top: 89px;
+  transform: scaleX(-1); }
+
+.zombie {
+  left: -204px;
+  top: 26px;
+  transform: scaleX(-1); }
+
+.dmx {
+  left: 498px;
+  bottom: -34px;
+  z-index: 2; }
+
+.ed {
+  bottom: 7px;
+  left: 252px;
+  transform: scaleX(-1); }
+
+.lance {
+  bottom: -46px;
+  left: -43px; }
 
 h3, p {
   text-align: center;
