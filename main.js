@@ -79,6 +79,7 @@ var joust = {
       $('.toLancePage').on('click', function(){
         event.preventDefault();
         $('.charPage').fadeOut();
+        $(".toLancePage").fadeIn();
         joust.lancePage();
       })
   },
@@ -90,6 +91,7 @@ var joust = {
   showBoating: function(){
     var showBoatStr = prompt("time to Showboat!")
     myChar.trashBoating(showBoatStr);
+
   },
   fight: function(){
     // choose attack
