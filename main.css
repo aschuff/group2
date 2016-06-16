@@ -219,11 +219,11 @@ img {
   margin-left: 15%;
   margin-top: 2%; }
 
-span.toFightPage {
+span.toTrashPage {
   text-align: center;
   margin-left: 40%; }
 
-span.toFightPage:hover {
+span.toTrashPage:hover {
   font-size: 1.2em;
   cursor: pointer;
   color: #FFF; }
