@@ -84,6 +84,7 @@ var joust = {
       $('.toLancePage').on('click', function(){
         event.preventDefault();
         $('.charPage').fadeOut();
+        $(".toLancePage").fadeIn();
         joust.lancePage();
       })
   },
