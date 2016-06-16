@@ -134,3 +134,26 @@ button {
     margin: 5px auto;
     width: 200px;
     text-align: center; }
+  .trashTalk img {
+    width: 100px;
+    height: 100px;
+    position: relative; }
+  .trashTalk .heath {
+    top: 23px;
+    transform: scaleX(-1); }
+  .trashTalk .zombie {
+    left: -90px;
+    top: 9px;
+    transform: scaleX(-1); }
+  .trashTalk .dmx {
+    left: 618px;
+    bottom: 79px; }
+  .trashTalk .ed {
+    bottom: 118px;
+    left: 500px;
+    transform: scaleX(-1); }
+
+.fightPage .fence {
+  width: 100%;
+  height: 50px;
+  margin-top: 25%; }

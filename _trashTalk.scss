@@ -16,4 +16,27 @@
     width: 200px;
     text-align: center;
   }
+  img {
+    width: 100px;
+    height: 100px;
+    position: relative;
+  }
+  .heath {
+    top: 23px;
+    transform: scaleX(-1);
+  }
+  .zombie {
+    left: -90px;
+    top: 9px;
+    transform: scaleX(-1);
+  }
+  .dmx {
+    left: 618px;
+    bottom: 79px;
+  }
+  .ed {
+    bottom: 118px;
+    left: 500px;
+    transform: scaleX(-1);
+  }
 }
